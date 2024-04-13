@@ -23,5 +23,5 @@ hm.addEventListener("click", () => {
    }
    setTimeout(() => {
     menuLoading = false;
-}, 350);
+}, 250);
 });
