@@ -1,5 +1,7 @@
 let hm = document.querySelector(".hm");
 let menu = document.querySelector(".hm-menu");
+let design = document.querySelector(".design");
+let cd = document.querySelector(".calc-and-design");
 let menuLoading = false;
 let selectedOp = -1;
 let firstArg = "";
@@ -7,6 +9,9 @@ let disVal = "0";
 let disRes = "0";
 let err = false;
 let doubleNeg = false;
+
+let copy = document.querySelector(".logo-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
 
 hm.addEventListener("click", () => {
     if (menuLoading) return;
@@ -64,17 +69,17 @@ let display = document.querySelector(".calcDis");
 display.innerHTML = disVal;
 bClear.addEventListener("click", function () {
     display.innerHTML = "";
-    for (let i = 0; i < 21; i++) {
+    for (let i = 0; i < 18; i++) {
         setTimeout(() => {
             display.innerHTML += "$";
         }, 10 * i);
     }
     setTimeout(() => {
         display.innerHTML = "0";
+        disVal = "0";
+        selectedOp = -1;
+        show("0", 1);
     }, 300);
-    disVal = "0";
-    selectedOp = -1;
-    show("0", 1);
 });
 
 b0.addEventListener("click", function () {
