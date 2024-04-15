@@ -189,7 +189,7 @@ nav a {
     margin: 0;
     padding: 0;
     background-image: 
-    linear-gradient(to right, rgb(34, 36, 41) 50%, rgba(255, 255, 255, 0)),
+    linear-gradient(to right, rgb(34, 36, 41) 60%, rgba(255, 255, 255, 0)),
     url('assets/vecteezy_galaxy-background-with-falling-star-vector-space-galaxy_7120314.jpg');
 }
 
@@ -474,12 +474,12 @@ nav a {
 height: 100%;
 display: flex;
 justify-content: center;
-align-items: flex-start;
+align-items: center;
 }
 
 .big-logo img{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     margin: 0;
     padding: 0;
 }
